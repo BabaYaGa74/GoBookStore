@@ -77,7 +77,7 @@ var DeleteBookHandler = func(w http.ResponseWriter, r *http.Request) {
 	bookId := vars["bookId"]
 	Id, err := strconv.ParseInt(bookId, 0, 0)
 	if err != nil {
-		http.Error(w, "Cannot parsed Id", http.StatusBadRequest)
+		http.Error(w, "User Id cannot be parsed", http.StatusBadRequest)
 		return
 	}
 	book := models.DeleteBook(Id)
