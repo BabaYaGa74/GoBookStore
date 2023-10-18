@@ -7,7 +7,7 @@ A simple BookStore application built with React on the frontend, Go (Golang) on 
 ### Features:
 
 - **Frontend**: Built with React, providing a rich user interface for book management.
-- **Backend**: Robust RESTful API developed in Go.
+- **Backend**: Robust RESTful API developed in Go using gorilla mux.
 - **Database**: Data storage backed by MySQL.
 - **CRUD Operations**: Easily create, read, update, and delete book records.
 - **Scalable Folder Structure**: Designed for maintainability and scalability as the project grows.
