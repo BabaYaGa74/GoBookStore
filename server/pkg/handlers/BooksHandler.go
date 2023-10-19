@@ -52,7 +52,7 @@ var UpdateBookHandler = func(w http.ResponseWriter, r *http.Request) {
 	bookId := vars["bookId"]
 	Id, err := strconv.ParseInt(bookId, 0, 0)
 	if err != nil {
-		http.Error(w, "Cannot parse Id", http.StatusBadRequest)
+		http.Error(w, "Cannot parse User ID", http.StatusBadRequest)
 		return
 	}
 	bookDetails, db := models.GetBookById(Id)
